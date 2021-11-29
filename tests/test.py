@@ -13,8 +13,8 @@ import decode_out as dec
 import csv
 import abc
 
-#file_locations = os.path.expanduser(os.getcwd())
-file_locations = '.'
+file_locations = os.path.expanduser(os.getcwd())
+#file_locations = '.'
 #logisim_location = os.path.join(os.getcwd(),"logisim.jar")
 logisim_location = "logisim.jar"
 
