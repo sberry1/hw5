@@ -1,13 +1,25 @@
 Testing files...
-Error in formatting of Logisim output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-i.circ):
-	 you have a non-integer in this list: ['00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']
-	FAILED test: MOV imm test (Error in the test)
-Error in formatting of Logisim output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-add-reg.circ):
-	 you have a non-integer in this list: ['00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']
-	FAILED test: MOV ADD register test (Error in the test)
-Error in formatting of Logisim output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-add-i.circ):
-	 you have a non-integer in this list: ['00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']
-	FAILED test: MOV ADD imm test (Error in the test)
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	e3a0000f
+0	0	0	0	0	0	0	e3a0000f
+0	0	0	0	0	1	4	0
+f	0	0	0	0	1	4	0
+	FAILED test: MOV imm test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-i.circ, also check test.py if this is a test you wrote))
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	e3a00001
+0	0	0	0	0	0	0	e3a00001
+0	0	0	0	0	1	4	e3a01002
+1	0	0	0	0	1	4	e3a01002
+	FAILED test: MOV ADD register test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-add-reg.circ, also check test.py if this is a test you wrote))
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	e3a01003
+0	0	0	0	0	0	0	e3a01003
+0	0	0	0	0	1	4	e2812009
+0	3	0	0	0	1	4	e2812009
+	FAILED test: MOV ADD imm test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-add-i.circ, also check test.py if this is a test you wrote))
 Format is student then expected
 R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step
 0	0	0	0	0	0
@@ -15,7 +27,11 @@ R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step
 0	0	0	0	0	1
 b	0	0	0	0	1
 	FAILED test: CMP for conditional adds test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/cond-add.circ, also check test.py if this is a test you wrote))
-Error in formatting of Logisim output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/branch-forward.circ):
-	 you have a non-integer in this list: ['00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', '00000000000000000000000000000000', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx']
-	FAILED test: B forward test (Error in the test)
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	ea000001
+0	0	0	0	0	0	0	ea000001
+0	0	0	0	0	1	4	e3a0000a
+0	0	0	0	0	1	c	e3a0201e
+	FAILED test: B forward test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/branch-forward.circ, also check test.py if this is a test you wrote))
 Passed 0/5 tests
