@@ -18,6 +18,11 @@ R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	In
 1	4	0	0	0	2	8	e0402001
 1	2	0	0	0	2	8	e0402001
 	FAILED test: MOV SUB register test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-sub-reg.circ, also check test.py if this is a test you wrote))
+Format is student then expected
+R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	Instruction
+0	0	0	0	0	0	0	e3a00003
+0	0	0	0	0	0	0	e3a00001
+	FAILED test: MOV SUB imm test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/mov-sub-imm.circ, also check test.py if this is a test you wrote))
 	PASSED test: MOV ADD imm test
 Format is student then expected
 R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step
@@ -35,4 +40,4 @@ R0 Value	R1 Value	R2 Value	LR (R14) Value	SP (R13) Value	Time Step	Fetch Addr	In
 1	0	0	0	0	1	4	e3a0000a
 0	0	0	0	0	1	c	e3a0201e
 	FAILED test: B forward test (Did not match expected output (check /mnt/c/Users/Blueberry/Documents/Github/hw5/tests/branch-forward.circ, also check test.py if this is a test you wrote))
-Passed 2/6 tests
+Passed 2/7 tests

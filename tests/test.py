@@ -213,6 +213,10 @@ p1_tests = [
 
 # Single-cycle (sc) tests
 p2sc_tests = [
+  ("LSL test",
+     TestCase(os.path.join(file_locations,'lsl.circ'),
+              [[0, 0, 0, 0x0, 0x0, 0, 0x0,  0xe3a0000f],
+               [15, 0, 0, 0x0, 0x0, 1, 0x4,  0x00000000]]), "cpu"),
   ("MOV imm test",
         TestCase(os.path.join(file_locations,'mov-i.circ'),
                 [[0, 0, 0, 0x0, 0x0, 0, 0x0,  0xe3a0000f],
